@@ -1,0 +1,73 @@
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "membershipId": "test14",
+    "givenName": "test",
+    "lastName": "test",
+    "phone": "test",
+    "emailAddress": "test",
+    "address": "test",
+    "dob": "2022-10-20"
+}
+
+###
+GET http://localhost:3000/customers
+
+###
+GET http://localhost:3000/customers/test13
+
+###
+POST http://localhost:3000/claims
+Content-Type: application/json
+
+{
+    "recordId": "00020",
+    "membershipId" : "test8",
+    "image" : "test",
+    "rego" : "test",
+    "make" : "test",
+    "model" : "test",
+    "bodyType" : "test",
+    "yearOfMake" : "test",
+    "colour" : "test",
+    "engineNumber" : "test"
+}
+
+###
+GET http://localhost:3000/claims
+
+###
+GET http://localhost:3000/claims/00003
+
+###
+POST http://localhost:3000/vehicles
+Content-Type: application/json
+
+{
+    "VehicleId":"152648200",
+    "TVID":"0",
+    "Type":"PALC",
+    "VehicleLongDescription":"HYUNDAI SONATA SLX Auto or Manual NF ET41D 06/2008~04/2010 4 Door Sedan FWD PETROL 2.4 litre, G4KE I4 16v DOHC VVT MPFI {127kW} ",
+    "VehicleDescription":"08~10 Hyundai Sonata 2.4L ",
+    "Make":"HYUNDAI",
+    "Model":"SONATA SLX",
+    "Year":"06/2008 ~ 04/2010",
+    "SeriesChassis":"NF                        -ET41D",
+    "Engine":"2.4L  PET G4KE I4 16v DOHC VVT MPFI {127kW}",
+    "Details":"SLX,  4D Sedan, FWD KMHET41D  [SOUTH KOREA], AT/MT",
+    "Body":"4 Door Sedan",
+    "Auto":"1",
+    "Man":"1",
+    "CVT":"0",
+    "DCT":"0",
+    "AMT":"0",
+    "HasMID":"1",
+    "Transmission":"Auto or Manual "
+}
+
+###
+GET http://localhost:3000/vehicles/152648200
+
+
+
